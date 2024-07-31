@@ -1,0 +1,9 @@
+<div class='cards-grid'>
+    <app-absences-card *ngFor='let item of attendance' [item]='item'></app-absences-card>
+</div>
+
+<ion-content>
+    <ion-accordion-group mode='ios'>
+        <app-absences-accordion *ngFor='let item of attendance' [item]='item'></app-absences-accordion>
+    </ion-accordion-group>
+</ion-content>
